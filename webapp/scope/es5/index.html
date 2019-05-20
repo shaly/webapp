@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><h1>Hello Jane</h1></div>
+<script>
+    // var name="keke";
+    // function test() {
+    //     var name="张三";
+    //     console.log("方法内的名字："+name);
+    // }
+    // test();
+    // console.log("方法外的名字："+name);
+/*
+* 控制台输出
+* 方法内的名字：张三
+方法外的名字：keke
+* */
+
+
+//============es5块级作用域,if for循环穿透
+//     var f=true;
+//     if(f){
+//         var x=100;
+//         console.log("方法内的内容："+x);
+//     }
+//     console.log("方法外的内容："+x);
+/*
+方法内的内容：100
+ 方法外的内容：100*/
+
+
+
+
+
+//============es6 let隔离作用域
+//     var f=true;
+//     if(f){
+//         //局部作用域
+//         let x=100;//let隔离作用
+//         console.log("方法内的内容："+x);
+//     }
+//     //此处x值找不到，会报错
+//     console.log("方法外的内容："+x);
+/*方法内的内容：100
+ Uncaught ReferenceError: x is not defined
+ */
+
+
+//============块作用域
+// console.log("打印啥=====》"+name);
+// var name="张三";
+/*
+* 打印啥=====》张三
+* */
+
+
+
+//============高安全性隔离
+//     console.log("打印啥=====》"+name);
+//     let name="张三";
+/*
+*  Uncaught ReferenceError: Cannot access 'name' before initialization
+* */
+
+
+
+//==========互不干扰
+// let a=10;
+// console.log(a);
+// function test() {
+//     let a=100;
+//     if(true){
+//         let a=1000;
+//         console.log(a);
+//     }
+//     console.log(a);
+// }
+// test();
+    /**
+     * 10
+     * 1000
+     * 100
+     */
+
+
+
+
+//继续正常
+    let a=10;
+    console.log(a);
+    function test() {
+         a=100;
+        if(true){
+             a=1000;
+            console.log(a);
+        }
+        console.log(a);
+    }
+    test();
+    /**
+     * 10
+     * 1000
+     * 1000
+     */
+</script>
+</body>
+</html>
