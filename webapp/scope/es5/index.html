@@ -90,22 +90,41 @@
 
 
 //继续正常
-    let a=10;
-    console.log(a);
-    function test() {
-         a=100;
-        if(true){
-             a=1000;
-            console.log(a);
-        }
-        console.log(a);
-    }
-    test();
+//     let a=10;
+//     console.log(a);
+//     function test() {
+//          a=100;
+//         if(true){
+//              a=1000;
+//             console.log(a);
+//         }
+//         console.log(a);
+//     }
+//     test();
     /**
      * 10
      * 1000
      * 1000
      */
+
+
+//let可以改变变量值
+    let a=10;
+    a=100;
+    console.log(a);
+    /**
+     * 100
+     */
+    //直接编译不通过，const是用来定义常量的
+    //const不能改变变量值，但如果用const声明一个对象，那么对象里的属性是可以改变的
+    //原因：因为const内部是依靠指针来判断值是否被改变，改变对象内部的属性是没有引起指针的改变。
+    //const b=10;
+   // b=100;//报错
+   // console.log(b);
+    const c={};
+    c.name="Jane";
+    console.log(c.name);
+
 </script>
 </body>
 </html>
