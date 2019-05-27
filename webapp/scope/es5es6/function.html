@@ -125,6 +125,26 @@
     persons.sayHi();
 
 
+    //eg3:
+   /* var obj={};
+    obj.func=function () {
+        console.log(this);//obj
+        (function () {
+            console.log(this);//window
+        })();
+    };
+    obj.func();*/
+
+    var obj={};
+    obj.func=function () {
+        console.log(this);//obj
+        ( ()=> {
+            console.log(this);//obj
+        })();
+    };
+    obj.func();
+
+
 
 </script>
 
