@@ -76,6 +76,23 @@
     for(let a of arrs.values()){
         console.log("值："+a);
     }
+
+
+
+
+    let numbers=["s001","s002","s003","s004","s005"];
+    //map：加前缀
+    preNumbers=numbers.map((ele)=>"A"+ele);
+    preNumbers.forEach(function (value,index,obj) {
+        console.log(value);
+    });
+
+
+    let arr1 =[1,2,5,5,8];
+    //reduce：计算
+   // const reducer=(accumulator,currentValue)=>accumulator+currentValue;
+    const reducer=(accumulator,currentValue)=>accumulator*currentValue;
+    console.log(arr1.reduce(reducer));
 </script>
 </body>
 </html>
