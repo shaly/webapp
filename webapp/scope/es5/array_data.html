@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--js学习网站：https://developer.mozilla.org/zh-CN/-->
+<!--
+    es5
+    数组：
+    concat()//数据合并
+    join()//返回指定分割的字符串
+    pop()//返回栈顶元素
+    push()//追加元素到数组中
+    reverse();//数组反转
+    shift();//返回最后一个元素
+    slice()//数组元素的截取和替换
+    sort()数组的排序
+    splice()元素的一个替换和截取
+    toString()
+    unshift()往数组的站定添加元素
+    valueOf()返回数组的引用对象
+
+    es2015中
+    find()
+    findIndex()
+    fill()
+    entries()
+    keys()
+    values()
+-->
+<script>
+    let arrs =[1,2,35,67,9,11];
+    //find：找到数组中第一个满足的元素
+   let findFirst= arrs.find(function (element) {
+        return element >10;
+    });
+    console.log(findFirst.toString());
+
+
+    //find：找到数组中第一个满足的元素下标
+    let findFirstIndex= arrs.findIndex(function (element) {
+        return element >10;
+    });
+    console.log(findFirstIndex.toString());
+
+    //fill:给一个给定的值来填充数组，通常用来初始化一个新array数组
+    let a=new Array(5);//目前五个undefined
+    a.fill("1");//目前五个1
+    console.log(a.toString());
+
+    //forEach
+    for (let i=0;i<arrs.length;i++){
+        console.log("循环："+arrs[i]);
+    }
+    arrs.forEach(function (value,index,obj) {
+        console.log("下标："+index+";值："+value+";整个arrs对象="+obj);
+    });
+
+
+    console.log("======================");
+    //es6三个新的方法--entries keys和values用于便利数组。
+    //keys是对键名的遍历，values是对键值的遍历，entries是对键的遍历
+    for(let a of arrs.entries()){
+        console.log("键："+a[0]+"=======值："+a[1]);
+    }
+    console.log("======================");
+    for(let a of arrs.keys()){
+        console.log("键："+a);
+    }
+    console.log("======================");
+    for(let a of arrs.values()){
+        console.log("值："+a);
+    }
+</script>
+</body>
+</html>
