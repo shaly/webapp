@@ -18,6 +18,26 @@
         return x+y;
     }
     console.log(test(1,3));
+
+    //非必传
+    function hello(name,age) {
+        console.log(name+age);
+    }
+    hello();//NaN
+    //默认参数
+    function hello1(name="Jane",age=18) {
+        console.log(name+age);
+    }
+    hello1();//Jane18
+    hello1("Jane1");//Jane118
+    hello1(20);//38
+    hello1("Jane2",22);//Jane222
+
+    //无参
+    function hello2() {
+        console.log(name+age);
+    }
+    hello2(2);//报错
 </script>
 
 </body>
