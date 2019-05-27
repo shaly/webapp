@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    console.log(test(1,2));
+    //声明式函数:优先加载，可以在函数使用处的下方声明
+    function test(x,y) {
+        return x+y;
+    }
+
+    //函数表达式:按顺序加载，必须在函数使用使用之前声明好
+    var test1=function (x,y) {
+        return x+y;
+    }
+    console.log(test(1,3));
+</script>
+
+</body>
+</html>
