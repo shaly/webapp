@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scope/es5es6/function.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+            <state relative-caret-position="106">
+              <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -157,12 +157,12 @@
       <workItem from="1558507109325" duration="24000" />
       <workItem from="1558507955359" duration="599000" />
       <workItem from="1558758528465" duration="1779000" />
-      <workItem from="1558960715938" duration="4307000" />
+      <workItem from="1558960715938" duration="9465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13030000" />
+    <option name="totallyTimeSpent" value="18188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="966" y="0" width="947" height="1032" extended-state="0" />
@@ -172,7 +172,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289941" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.18343195" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -221,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scope/es5es6/function.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        <state relative-caret-position="106">
+          <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
         </state>
       </provider>
     </entry>
