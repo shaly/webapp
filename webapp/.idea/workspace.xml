@@ -11,9 +11,10 @@
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2_2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scope/es5es6/setTimeOut.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scope/es5es6/function.html" beforeDir="false" afterPath="$PROJECT_DIR$/scope/es5es6/function.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,29 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scope/es5es6/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2808">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scope/es5es6/array_data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scope/es5es6/function.html">
+        <entry file="file://$PROJECT_DIR$/scope/es5es6/setTimeOut.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="141" column="35" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
+            <state relative-caret-position="695">
+              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -73,6 +56,7 @@
         <option value="$PROJECT_DIR$/scope/es5/index.html" />
         <option value="$PROJECT_DIR$/scope/es5/array_data.html" />
         <option value="$PROJECT_DIR$/scope/es5es6/function.html" />
+        <option value="$PROJECT_DIR$/scope/es5es6/setTimeOut.html" />
       </list>
     </option>
   </component>
@@ -157,12 +141,13 @@
       <workItem from="1558507109325" duration="24000" />
       <workItem from="1558507955359" duration="599000" />
       <workItem from="1558758528465" duration="1779000" />
-      <workItem from="1558960715938" duration="10642000" />
+      <workItem from="1558960715938" duration="10689000" />
+      <workItem from="1559136793340" duration="943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19365000" />
+    <option name="totallyTimeSpent" value="20355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="966" y="0" width="947" height="1032" extended-state="0" />
@@ -214,8 +199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scope/es5es6/array_data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="2054">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
@@ -223,6 +208,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="141" column="35" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scope/es5es6/setTimeOut.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
