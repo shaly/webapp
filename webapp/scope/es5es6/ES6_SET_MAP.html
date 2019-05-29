@@ -24,7 +24,12 @@
         console.log(value);
     }
 
-    
+    //WeakSet只能存储对象
+    var swet=new WeakSet();
+    //swet.add(3);//报错
+    swet.add({name:"Jane1"});
+    swet.add({name:"Jane2"});
+    console.log(swet);
 
 
 

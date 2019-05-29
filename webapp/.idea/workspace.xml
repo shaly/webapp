@@ -11,10 +11,9 @@
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2_2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scope/es5es6/ES6_SET_MAP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scope/es5es6/ES6_SET_MAP.html" beforeDir="false" afterPath="$PROJECT_DIR$/scope/es5es6/ES6_SET_MAP.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scope/es5es6/ES6_SET_MAP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="487">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -152,12 +151,12 @@
       <workItem from="1558507955359" duration="599000" />
       <workItem from="1558758528465" duration="1779000" />
       <workItem from="1558960715938" duration="10689000" />
-      <workItem from="1559136793340" duration="1622000" />
+      <workItem from="1559136793340" duration="1872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21034000" />
+    <option name="totallyTimeSpent" value="21284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="966" y="0" width="947" height="1032" extended-state="0" />
@@ -230,8 +229,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scope/es5es6/ES6_SET_MAP.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="487">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
