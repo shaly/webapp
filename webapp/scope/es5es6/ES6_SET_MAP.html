@@ -45,6 +45,51 @@
     for(let k of set1.entries()){
         console.log(k);
     }
+    console.log(set1.size);
+
+
+    console.log("======================================");
+    //其实这三个都一样，javaScript会自动把属性都变为字符串形式：eg."属性名"
+    var obj1={name:"Jane1"};
+    var obj2={"name":"Jane2"};
+    var obj3={'name':"Jane2"};
+
+
+    var obj4={obj1:"Jane4"};//obj1饮食调用toString方法的过程
+    console.log(obj4.obj1);
+
+
+
+    var map=new Map([["a",1],["b",2],[obj4,4]]);
+    console.log(map.size);//3
+    console.log(map.get("a"));//1
+    console.log(map.get(obj4));//4
+    //添加元素
+    map.set("d",44);
+    //遍历
+    for(let value of map){
+        console.log(value);
+        console.log(value[0]+"---"+value[1]);
+    }
+    //遍历keys
+    for(let k of map.keys()){
+        console.log(k+"--- ---"+map.get(k));
+    }
+    //遍历values
+    for(let k of map.values()){
+        console.log(k);
+    }
+    //遍历entries
+    for(let k of map.entries()){
+        console.log(k);
+        console.log(k[0]+"--- --- ---"+k[1]);
+    }
+
+    var map1=new WeakMap();
+    map1.set({name:"k1"},{name:"Janew1"});
+    map1.set({name:"k2"},{name:"Janew2"});
+    map1.set({name:"k3"},{name:"Janew3"});
+    console.log(map1);
 
 </script>
 
