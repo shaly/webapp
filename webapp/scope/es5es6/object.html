@@ -27,7 +27,22 @@
     }
     console.log("是否包含属性："+obj.hasOwnProperty("name"));//true
     console.log("是否包含属性："+obj.hasOwnProperty("phone"));//false
-    
+
+    //遍历key
+    for(var key in obj){
+        console.log("key="+key+"-----value="+obj[key]);
+    }
+    console.log(Object.keys(obj));
+    console.log(Object.getOwnPropertyNames(obj));
+    //对象拷贝
+    var o1={name:"111"};
+    var o2=Object.assign(o1);//浅拷贝
+    var o3={name:"111"};
+    console.log(o1==o2)//true
+    console.log(o1==o3);//false
+    o1.name="222";
+    console.log(o1.name);//222
+    console.log(o2.name);//222
 
 
 
@@ -39,6 +54,49 @@
     }
 
     css("app",{background:"red",color:"yellow"});
+
+
+    //================== 简写 =================
+    //es5
+    var model={
+        name:"Jane",
+        age:18,
+        f1:function () {
+
+        },
+        f2:function () {
+
+        }
+    };
+    //es6可以简写
+    var simpleModel={
+        name:"Jane",
+        age:18,
+        f1() {
+            console.log(111);
+        },
+        f2(){
+            console.log(222);
+        }
+    };
+    simpleModel.f1();
+    simpleModel.f2();
+
+    var foo="好吃的";
+    var a={"foo":foo};//es5
+    var a2={foo};//es6
+
+    function getXXX() {
+        var a=10;
+        var b=100;
+        return {a:a,b:b};
+    }
+    //es6可以简写
+    function simpleGetXXX() {
+        var a=10;
+        var b=100;
+        return {a,b};
+    }
 
 
 </script>
