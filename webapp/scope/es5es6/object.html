@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>object</h1>
+
+<div id="app">object demo</div>
+
+<script>
+
+    var obj={
+        name:"Jane",
+        age:18,
+        listen:function () {
+
+        },
+        falllovewith:function () {
+
+        }
+    };
+    console.log(obj.name+"===="+obj["name"]);
+    for(var key in obj){
+        console.log(key+"======"+obj[key]);
+    }
+    console.log("是否包含属性："+obj.hasOwnProperty("name"));//true
+    console.log("是否包含属性："+obj.hasOwnProperty("phone"));//false
+    
+
+
+
+    //jquery css方法 : css(key,value)    .css({})
+    function css(id,obj) {
+        for(var key in obj) {
+            document.getElementById(id)["style"][key] = obj[key];
+        }
+    }
+
+    css("app",{background:"red",color:"yellow"});
+
+
+</script>
+</body>
+</html>
