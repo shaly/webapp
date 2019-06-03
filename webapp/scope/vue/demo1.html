@@ -12,6 +12,8 @@
         <a :href="url" :title="title">{{title1}}</a>
 
         <button v-on:click="changeElement">改变它</button>
+        <button @click="changeElement">改变它1</button>
+        <button @click="changeElement1('改变',2)">改变它2</button>
     </div>
 
 <script>
@@ -19,6 +21,18 @@
     //指令的主要只是当气表达式发生改变时，对应将某些行为应用到dom上。
     //v- 指令名
     //注意点：vuejs2.0以后所有的指令都不允许使用{{}}，只能使用在文本替换。
+
+
+    //v-on:或 @ 事件类型
+    //eg:onclick=v-on:click=@click    onmousedown=v-on:mousedown=@mousedown
+    //鼠标：onmousedown onmouseover onmouseup onmousemove on mouseout onmouseenter onmouseleave
+    //点击事件：onclick ondblick onsubmit
+    //焦点：onfocus onselect
+    //键盘：keydown keyup keypress
+    //加载：onload onerror onresize
+    //拖拽(H5)：ondrag ondragstart ondrop ondragdown ondragmove ondragend
+    //绑定：v-on 或 @
+    //定义事件实在methods中
     var app=new Vue({
         el:"#app",
         data:{
@@ -30,6 +44,12 @@
         methods:{
             changeElement(){
                 this.title1="It BOOK !"
+            },
+            changeElement1(parm,i){
+                this.title1=parm+i;
+            },
+            changeElement2(parm,i,e){
+                this.title1=parm+i;
             }
         }
     });
