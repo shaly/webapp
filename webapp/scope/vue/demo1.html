@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app" v-if="isShow">
+        {{title}}
+    </div>
+
+<script>
+    //标记===标记（在dom元素中增加一个v-属性，可以控制元素的隐藏，显示，循环等）
+    //指令的主要只是当气表达式发生改变时，对应将某些行为应用到dom上。
+    //v- 指令名
+    //注意点：vuejs2.0以后所有的指令都不允许使用{{}}，只能使用在文本替换。
+    var app=new Vue({
+        el:"#app",
+        data:{
+            title:"Hello Vue !!!",
+            isShow:true
+        }
+    });
+</script>
+</body>
+</html>
