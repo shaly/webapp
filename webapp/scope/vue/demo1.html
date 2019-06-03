@@ -6,6 +6,13 @@
     <script src="js/vue.js"></script>
 </head>
 <body>
+
+<div id="app1" @click="pdel">
+    <span>{{title}}}</span>
+    <a href="javascript:void(0)" @click="del">删除元素</a>
+</div>
+
+
     <div id="app" v-if="isShow">
         <a v-bind:href="url" v-bind:title="title">{{title1}}</a>
         <br></br>简写<br></br>
@@ -23,7 +30,27 @@
         <a v-bind:href="url" v-on:click.prevent="changeElement1('改变',22)" v-bind:title="title">{{title1}}</a>
     </div>
 
+
+
 <script>
+    var app=new Vue({
+        el:"#app1",
+        data:{
+            title:['商品1','商品2','商品3','商品5']
+        },
+        methods:{
+            del(){
+                alert(66);
+            },
+            pdel(){
+                alert(77);
+            }
+        }
+    });
+
+
+
+
     //标记===标记（在dom元素中增加一个v-属性，可以控制元素的隐藏，显示，循环等）
     //指令的主要只是当气表达式发生改变时，对应将某些行为应用到dom上。
     //v- 指令名
