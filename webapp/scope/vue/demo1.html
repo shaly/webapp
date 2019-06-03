@@ -14,6 +14,7 @@
         <button v-on:click="changeElement">改变它</button>
         <button @click="changeElement">改变它1</button>
         <button @click="changeElement1('改变',2)">改变它2</button>
+        <button @click="changeElement3('改变',3,$event)">改变它3</button>
     </div>
 
 <script>
@@ -48,8 +49,10 @@
             changeElement1(parm,i){
                 this.title1=parm+i;
             },
-            changeElement2(parm,i,e){
-                this.title1=parm+i;
+            changeElement3(parm,i,e){
+                var but=e.target || e.srcElement;
+                but.style.background="red";
+                this.title1=parm+"***"+i;
             }
         }
     });
