@@ -10,6 +10,8 @@
         <a v-bind:href="url" v-bind:title="title">{{title1}}</a>
         <br></br>简写<br></br>
         <a :href="url" :title="title">{{title1}}</a>
+
+        <button v-on:click="changeElement">改变它</button>
     </div>
 
 <script>
@@ -24,6 +26,11 @@
             title1:"去学编程！",
             url:"http://www.itbooking.net",
             isShow:true
+        },
+        methods:{
+            changeElement(){
+                this.title1="It BOOK !"
+            }
         }
     });
 </script>
