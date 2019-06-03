@@ -15,6 +15,12 @@
         <button @click="changeElement">改变它1</button>
         <button @click="changeElement1('改变',2)">改变它2</button>
         <button @click="changeElement3('改变',3,$event)">改变它3</button>
+
+
+        <br/><br/><br/><br/>去除默认行为方式1<br/>
+        <a v-bind:href="url" v-on:click="changeElement4($event)" v-bind:title="title">{{title1}}</a>
+        <br/>去除默认行为方式2<br/>
+        <a v-bind:href="url" v-on:click.prevent="changeElement1('改变',22)" v-bind:title="title">{{title1}}</a>
     </div>
 
 <script>
@@ -53,6 +59,11 @@
                 var but=e.target || e.srcElement;
                 but.style.background="red";
                 this.title1=parm+"***"+i;
+            },
+            changeElement4(e) {
+                //去除默认行为方式3
+                e.preventDefault();
+                alert("aa");
             }
         }
     });
