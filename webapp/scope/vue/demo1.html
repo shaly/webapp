@@ -7,7 +7,9 @@
 </head>
 <body>
     <div id="app" v-if="isShow">
-        {{title}}
+        <a v-bind:href="url" v-bind:title="title">{{title1}}</a>
+        <br></br>简写<br></br>
+        <a :href="url" :title="title">{{title1}}</a>
     </div>
 
 <script>
@@ -18,7 +20,9 @@
     var app=new Vue({
         el:"#app",
         data:{
-            title:"Hello Vue !!!",
+            title:"Go to code school",
+            title1:"去学编程！",
+            url:"http://www.itbooking.net",
             isShow:true
         }
     });
