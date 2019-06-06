@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app" >
+    <button @click.once="getInfo">抽奖</button><!--.once只执行一次-->
+    <span @click.capture="span1"><button @click.capture="getInfo">抽奖</button></span><!--事件默认是冒泡方式执行（由内向外），.capture将事件修改为捕捉形式（由外向内）-->
+    <span @click.capture.stop="span1"><button @click.capture="getInfo">抽奖</button></span><!--.stop防止事件穿透-->
+    <span @click.capture.stop.once="span1"><button @click.capture="getInfo">抽奖</button></span>
+
+
+
+    <input @keydown.enter="enterFun" value="回车"/>
+    <input @keydown.ctrl.enter="enterFun" value="ctrl+回车"/>
+    <input @keydown.alt.enter="enterFun" value="alt+回车"/>
+    <input @keydown.up="enterFun" value="向上"/>
+    <input onkeydown="keyNum(event)" value="输入键盘"/>
+    <input @keydown.32="keyNumFun" value="32号空格键 键盘输入事件"/>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            title:"Go to code school",
+            title1:"去学编程！",
+            url:"http://www.itbooking.net",
+            isShow:true
+        },
+        methods:{
+            getInfo(e){
+                alert("开始抽奖");
+            },
+            getInfo1(e){
+                alert("开始抽奖1");
+            },
+            span1(e){
+                alert("span1");
+            },
+            enterFun(e){
+                console.log("enter");
+            },
+            keyNumFun(e){
+                console.log("keyNumFun");
+            }
+        }
+    });
+    //keyup keydown
+    //enter,tab,delete,esc,up,down,right,left,space
+    //组合使用
+    //.ctrl .alt .shift .meta(窗口)
+</script>
+</body>
+</html>
