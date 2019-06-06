@@ -13,7 +13,7 @@
     <span @click.capture.stop="span1"><button @click.capture="getInfo">抽奖</button></span><!--.stop防止事件穿透-->
     <span @click.capture.stop.once="span1"><button @click.capture="getInfo">抽奖</button></span>
 
-
+ 
 
     <input @keydown.enter="enterFun" value="回车"/>
     <input @keydown.ctrl.enter="enterFun" value="ctrl+回车"/>
