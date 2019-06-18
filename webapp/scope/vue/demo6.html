@@ -27,6 +27,12 @@
     <div class="padd fz32" :class="{'active':isActive}">
         我是一个div2
     </div>
+    <div class="fz32" :class="[isActive?active:'',padd]">
+        我是一个div3
+    </div>
+    <div class="fz32" :class="[{'active':isActive},padd]">
+        我是一个div3
+    </div>
     <button v-on:click="changeColor">改变样式</button>
 </div>
 <script>
