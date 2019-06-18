@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+        #app{
+            padding:20px;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul li{
+            list-style: none;
+        }
+        .tab{
+            border:1px solid #eeeeee;
+            width:600px;
+        }
+        .tab li{
+            float:left;
+            padding:10px 20px;
+            border:1px solid #eeeeee;
+            border-top:0;
+            border-bottom: 0;
+        }
+        .tab li:first-child{
+            forder-left:0;
+        }
+
+        .tab li.active{
+            border-bottom:0;
+            background:red;
+        }
+        .cntbox{
+            clear:both;
+        }
+        .cntbox div{
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" >
+    <span>价钱：{{totalPrice}}</span>
+    <div>
+        <li v-for="good in goods">{{good.name}}</li>
+    </div>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            goods:[
+                {id:1,name:"name1",price:10,count:1},
+                {id:2,name:"name2",price:20,count:1},
+                {id:3,name:"name3",price:5,count:2},
+                {id:4,name:"name4",price:5.5,count:2},
+                {id:5,name:"name5",price:15,count:2},
+                {id:6,name:"name6",price:100,count:1},
+                {id:7,name:"name7",price:0,count:1}
+            ],
+            color:"red",
+            fontSize:14,
+            styles:{background:"red",fontSize:"32px",color:"#fff",padding:"20px"}
+        },
+        computed:{
+            //额外增加数据模型属性
+            totalPrice:function () {
+                var total=0;
+                for (var i=0;i<this.goods.length;i++){
+                    var good=this.goods[i];
+
+                    total=total+(good.price * good.count);
+                }
+                console.log("**************"+total);
+                return total;
+            }
+        },
+        methods:{
+        }
+    });
+</script>
+</body>
+</html>
