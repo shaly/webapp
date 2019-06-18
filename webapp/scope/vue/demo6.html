@@ -21,7 +21,7 @@
 <body>
 
 <div id="app" >
-    <div class="padd fz32" :class="{'active':isActive}">
+    <div class="fz32" :class="[active,padd]">
         我是一个div1
     </div>
     <div class="padd fz32" :class="{'active':isActive}">
@@ -42,7 +42,9 @@
             title1:"去学编程！",
             url:"http://www.itbooking.net",
             isShow:true,
-            isActive:true
+            isActive:true,
+            active:"active",
+            padd:"padd"
         },
         methods:{
             changeColor(e){
