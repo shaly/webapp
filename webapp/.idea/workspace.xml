@@ -11,7 +11,7 @@
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2_2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scope/vue/demo7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scope/vue/demo8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" afterDir="false" />
     </list>
@@ -27,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scope/vue/demo7.html">
+        <entry file="file://$PROJECT_DIR$/scope/vue/demo8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -63,6 +63,7 @@
         <option value="$PROJECT_DIR$/scope/vue/demo2.html" />
         <option value="$PROJECT_DIR$/scope/vue/demo6.html" />
         <option value="$PROJECT_DIR$/scope/vue/demo7.html" />
+        <option value="$PROJECT_DIR$/scope/vue/demo8.html" />
       </list>
     </option>
   </component>
@@ -157,12 +158,12 @@
       <workItem from="1559569915036" duration="4773000" />
       <workItem from="1559796653985" duration="1632000" />
       <workItem from="1560780555407" duration="599000" />
-      <workItem from="1560857064863" duration="4529000" />
+      <workItem from="1560857064863" duration="4683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37528000" />
+    <option name="totallyTimeSpent" value="37682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="921" y="3" width="995" height="1032" extended-state="0" />
@@ -280,8 +281,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scope/vue/demo7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        <state relative-caret-position="493">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scope/vue/demo8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
         </state>
       </provider>
     </entry>
