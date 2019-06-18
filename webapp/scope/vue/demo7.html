@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+        #app{
+            padding:20px;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul li{
+            list-style: none;
+        }
+        .tab{
+            border:1px solid #eeeeee;
+            width:600px;
+        }
+        .tab li{
+            float:left;
+            padding:10px 20px;
+            border:1px solid #eeeeee;
+            border-top:0;
+            border-bottom: 0;
+        }
+        .tab li:first-child{
+            forder-left:0;
+        }
+
+        .tab li.active{
+            border-bottom:0;
+            background:red;
+        }
+        .cntbox{
+            clear:both;
+        }
+        .cntbox div{
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" >
+    <div class="tab">
+        <ul>
+            <li @click="changetab(index)" v-for="(tab,index) in tabs" v-bind:class="{'active':tab.isShow}">{{tab.tname}}</li>
+        </ul>
+        <div class="cntbox">
+            <div v-show="tab.isShow" v-for="tab in tabs" >{{tab.content}}</div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            isActive:true,
+            tabs:[
+                {tname:"tab1",content:"tab11111111111111",isShow:true},
+                {tname:"tab2",content:"tab22222222222222",isShow:false},
+                {tname:"tab3",content:"tab33333333333333",isShow:false}
+            ]
+        },
+        methods:{
+            changetab:function(index){
+                for(var i=0;i<this.tabs.length;i++){
+                    if(i!=index){
+                        this.tabs[i].isShow=false;
+                    }
+                }
+                this.tabs[index].isShow=!this.tabs[index].isShow;
+            }
+        }
+    });
+</script>
+</body>
+</html>
