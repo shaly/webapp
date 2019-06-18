@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+        .active{
+            background:red;
+            color:#ffffff;
+        }
+        .padd{
+            padding:40px;
+        }
+        .fz32{
+            font-size:32px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" >
+    <div :class="{'active':isActive}">
+        我是一个div1
+    </div>
+    <div :class="{'active':isActive}">
+        我是一个div2
+    </div>
+    <button v-on:click="changeColor">改变样式</button>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            title:"Go to code school",
+            title1:"去学编程！",
+            url:"http://www.itbooking.net",
+            isShow:true,
+            isActive:true
+        },
+        methods:{
+            changeColor(e){
+                this.isActive=!this.isActive;
+            }
+        }
+    });
+</script>
+</body>
+</html>
