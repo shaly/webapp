@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+        table{
+            border:1px solid #ccc;
+            border-collapse: collapse;/*合并表格边框*/
+            border-spacing: 0;/*表格间隙*/
+            empty-cells: show;
+
+        }
+        th,td{
+            padding:8px 20px;
+            border:1px solid #ccc;
+            text-align: left;
+        }
+        th{
+            border:1px solid #555;
+            font-weight: 600;
+            white-space:nowrap;/*文本太长，直接换行*/
+        }
+
+        #app{
+            padding:100px;
+        }
+        [v-cloak]{display:none}
+    </style>
+</head>
+<body>
+
+<div id="app" v-cloak>
+    <div>总数量：{{totalCount}}</div>
+    <table>
+        <thead>
+        <th>序号</th>
+        <th>ID</th>
+        <th>商品名称</th>
+        <th>商品单价</th>
+        <th>商品数量</th>
+        <th>操作</th>
+        </thead>
+        <tbody v-if="goods.length>0">
+        <tr v-for="(good,index) in goods">
+            <td>{{index}}</td>
+            <td>{{good.id}}</td>
+            <td>{{good.name}}</td>
+            <td>{{good.price}}</td>
+            <td>{{good.count}}</td>
+            <td>
+
+                <button @click="handleReduce(index)">-</button>
+                {{good.count}}
+                <button @click="handleAdd(index)">+</button>
+
+                <button @click="handleRemove(index)">下架</button>
+            </td>
+        </tr>
+        </tbody>
+        <tbody v-if="goods.length==0">
+        <tr>
+            <td colspan="6" style="text-align: center;">暂无上架商品</td>
+        </tr>
+        </tbody>
+    </table>
+    <div>进价：￥{{totalPrice}} <button @click.enter="clear">清空商品</button>  <button @click.enter="showAll">还原进货</button> </div>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            goods:[
+                {id:1111,name:"小米手机",price:1000,count:7},
+                {id:2222,name:"vivo手机",price:2000,count:6},
+                {id:3333,name:"诺基亚手机",price:3000,count:5},
+                {id:4444,name:"三星手机",price:4000,count:4},
+                {id:5555,name:"魅族手机",price:5000,count:3},
+                {id:6666,name:"苹果手机",price:6000,count:2},
+                {id:7777,name:"华为手机",price:7000,count:1}
+            ]
+        },
+        computed:{
+            totalCount:function () {
+                var total=0;
+                for (var i=0;i<this.goods.length;i++){
+                    var good=this.goods[i];
+
+                    total+=good.count;
+                }
+                console.log("**************"+total);
+                return total;
+            },
+            totalPrice:function () {
+                var total=0;
+                for (var i=0;i<this.goods.length;i++){
+                    var good=this.goods[i];
+
+                    total+=(good.price * good.count);
+                }
+                console.log("**************"+total);
+                return total;
+            }
+        },
+        methods:{
+            handleRemove:function(index){
+                this.goods.splice(index,1);
+            },
+            handleReduce:function (index) {
+                this.goods[index].count-=this.goods[index].count==0?0:1;
+            },
+            handleAdd:function (index) {
+                this.goods[index].count++;
+                
+            },
+            clear:function () {
+                this.goods=[];
+            },
+            showAll:function () {
+                this.goods=[
+                    {id:1111,name:"小米手机",price:1000,count:7},
+                    {id:2222,name:"vivo手机",price:2000,count:6},
+                    {id:3333,name:"诺基亚手机",price:3000,count:5},
+                    {id:4444,name:"三星手机",price:4000,count:4},
+                    {id:5555,name:"魅族手机",price:5000,count:3},
+                    {id:6666,name:"苹果手机",price:6000,count:2},
+                    {id:7777,name:"华为手机",price:7000,count:1}
+                ];
+            }
+        }
+    });
+    alert(1);
+</script>
+</body>
+</html>
