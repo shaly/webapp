@@ -11,7 +11,8 @@
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module2_2.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/js/src/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scope/vue/demo9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scope/vue/demo10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scope/vue/demo11.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../001baseInfo/e_commonJS01/ES6_2/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -27,20 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scope/vue/demo9.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scope/vue/demo10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+            <state relative-caret-position="331">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scope/vue/demo7.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scope/vue/demo11.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+            <state relative-caret-position="442">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -75,6 +76,8 @@
         <option value="$PROJECT_DIR$/scope/vue/demo7.html" />
         <option value="$PROJECT_DIR$/scope/vue/demo8.html" />
         <option value="$PROJECT_DIR$/scope/vue/demo9.html" />
+        <option value="$PROJECT_DIR$/scope/vue/demo10.html" />
+        <option value="$PROJECT_DIR$/scope/vue/demo11.html" />
       </list>
     </option>
   </component>
@@ -96,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,6 +121,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,15 +130,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue" />
-      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue\js" />
-      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\ES6" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue" />
       <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue\js" />
       <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue" />
+      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\webapp\scope\vue\js" />
+      <recent name="D:\SOFT_STUDY\WebStormRumtime\rumo\ES6" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,18 +172,19 @@
       <workItem from="1559569915036" duration="4773000" />
       <workItem from="1559796653985" duration="1632000" />
       <workItem from="1560780555407" duration="599000" />
-      <workItem from="1560857064863" duration="6805000" />
+      <workItem from="1560857064863" duration="6975000" />
+      <workItem from="1560952338626" duration="2943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39804000" />
+    <option name="totallyTimeSpent" value="42917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="921" y="3" width="995" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06322445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27502635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,17 +304,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scope/vue/demo7.html">
+    <entry file="file://$PROJECT_DIR$/scope/vue/demo9.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        <state relative-caret-position="245">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scope/vue/demo9.html">
+    <entry file="file://$PROJECT_DIR$/scope/vue/demo7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scope/vue/demo10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scope/vue/demo11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>

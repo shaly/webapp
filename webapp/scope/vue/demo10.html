@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+        #app{
+            padding:20px;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul li{
+            list-style: none;
+        }
+        .tab{
+            border:1px solid #eeeeee;
+            width:600px;
+        }
+        .tab li{
+            float:left;
+            padding:10px 20px;
+            border:1px solid #eeeeee;
+            border-top:0;
+            border-bottom: 0;
+        }
+        .tab li:first-child{
+            forder-left:0;
+        }
+
+        .tab li.active{
+            border-bottom:0;
+            background:red;
+        }
+        .cntbox{
+            clear:both;
+        }
+        .cntbox div{
+            padding:50px;
+        }
+        [v-cloak]{display:none}
+    </style>
+</head>
+<body>
+
+<div id="app" v-cloak>
+    <h1>{{title}}</h1>
+    <h1 v-pre>我是Jane</h1>
+    <h1 v-text="title"></h1>
+    <span>{{num}}</span><br/>
+    <span v-once>{{num}}</span><br/>
+    <input type="text" v-model="num">
+
+    <div v-for="(val,key, index) in student">{{index}}=={{key}}===={{val}}</div>
+    {{student.sayHello()}}
+<br/>
+
+    <span v-if="student.male == 0">女</span>
+    <span v-else-if="student.male == 1">男</span>
+    <span v-else-if="student.male == 2">人妖</span>
+    <span v-else>未知</span>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            title:"HELLO VUE !!!",
+            num:100,
+            student:{
+                name:"Long",
+                age:18,
+                male:12,
+                phone:"177",
+                sayHello:function () {
+                    return "In fact , I mind you ..."
+                }
+            }
+
+        },
+        computed:{
+
+        },
+        methods:{
+        }
+    });
+    alert(1);
+</script>
+</body>
+</html>

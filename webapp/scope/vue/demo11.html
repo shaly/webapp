@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+<div id="app" v-cloak>
+    <!--推荐使用v-show-->
+    <div v-if="isShow">我是一个div</div>
+    <div v-show="isShow">我是一个div2</div>
+    <div v-show="!isShow">我是一个div3</div>
+    <button @click="changeShow">改变状态</button>
+    <div v-html="content"></div>
+</div>
+<script>
+
+    function keyNum(e){
+        console.log(e.keyCode+"-----"+e.which);
+    }
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            content:"<strong>标签内容</strong>",
+            isShow:true
+        },
+        computed:{
+
+        },
+        methods:{
+            changeShow(){
+                this.isShow=!this.isShow;
+            }
+        }
+    });
+</script>
+</body>
+</html>
